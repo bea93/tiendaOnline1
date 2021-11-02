@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Generated 1 nov. 2021 23:40:25 by Hibernate Tools 5.5.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 27 oct 2021 13:13:19 by Hibernate Tools 5.5.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
-    <class catalog="tienda_online" dynamic-insert="false" dynamic-update="false" mutable="true" name="Usuarios" optimistic-lock="none" polymorphism="implicit" select-before-update="false" table="usuarios">
+    <class catalog="tienda_online" dynamic-insert="false" dynamic-update="false" mutable="true" name="entities.Usuarios" optimistic-lock="none" polymorphism="implicit" select-before-update="false" table="usuarios">
         <id name="id" type="java.lang.Integer">
             <column name="id"/>
             <generator class="identity"/>

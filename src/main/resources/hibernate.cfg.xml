@@ -6,8 +6,8 @@
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 		<property name="hibernate.connection.url">jdbc:mysql://localhost/tienda_online</property>
 		<property name="hibernate.connection.username">root</property>
-		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-		<mapping class="main.java.entities.Roles"/>
-		<mapping class="main.java.entities.Usuarios"/>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		<mapping class="java.entities.Roles"/>
+		<mapping class="java.entities.Usuarios"/>
     </session-factory>
 </hibernate-configuration>

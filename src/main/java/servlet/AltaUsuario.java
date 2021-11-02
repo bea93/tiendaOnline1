@@ -59,7 +59,7 @@ public class AltaUsuario extends HttpServlet {
 			//HttpSession session = request.getSession(true);
 			Session session = HibernateUtil.getSessionFactory().getCurrentSession();
 			Transaction trans = session.beginTransaction();
-			usuario.insertarUsuario(session, nombre, password);
+			//usuario.insertarUsuario(session, nombre, password);
 			trans.commit();
 	}
 
