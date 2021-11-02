@@ -1,3 +1,5 @@
+package entities;
+
 // default package
 // Generated 1 nov. 2021 23:40:24 by Hibernate Tools 5.5.7.Final
 

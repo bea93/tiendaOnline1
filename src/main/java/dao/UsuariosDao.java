@@ -1,18 +1,17 @@
-package main.java.dao;
+package dao;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import main.java.entities.Roles;
-import main.java.entities.Usuarios;
+import entities.Usuarios;
 
 public class UsuariosDao {
 
 	static Logger logger = LogManager.getLogger(UsuariosDao.class);
 
-	public static boolean consultarUsuario(Session s, String dni) {
+	/*public static boolean consultarUsuario(Session s, String dni) {
 		String hql = "from Usuarios u where dni = :dni";
 		Usuarios u = s.createQuery(hql, Usuarios.class).setParameter("dni", dni).setMaxResults(1).uniqueResult();
 		if (u != null) {
@@ -34,13 +33,13 @@ public class UsuariosDao {
 		}
 
 		return u;
-	}
+	}*/
 
 	public void insertarUsuario(Session s, String nombre, String password) {
 		// TODO Auto-generated method stub
 		String nombreRegistro = nombre;
 		String passwordRegistro = password;
-		Usuarios user = new Usuarios(nombre, password);
-		s.save(user);
+		/*Usuarios user = new Usuarios(nombre, password);
+		s.save(user);*/
 	}
 }

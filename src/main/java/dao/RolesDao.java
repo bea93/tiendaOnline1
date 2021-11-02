@@ -1,4 +1,4 @@
-package main.java.dao;
+package dao;
 
 import java.util.List;
 
@@ -7,8 +7,7 @@ import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import main.java.entities.Roles;
-import main.java.entities.Usuarios;
+import entities.Roles;
 
 public class RolesDao {
 
@@ -32,7 +31,7 @@ public class RolesDao {
 		return lista;
 	}
 	
-	public static boolean insertarRol(Session s, int id, String nombre) {
+	/*public static boolean insertarRol(Session s, int id, String nombre) {
 		boolean correcto = false;
 		Transaction t = s.beginTransaction();
 		try {
@@ -51,5 +50,5 @@ public class RolesDao {
 		}
 		s.close();
 		return correcto;
-	}
+	}*/
 }

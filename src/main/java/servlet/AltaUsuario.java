@@ -1,4 +1,4 @@
-package main.java.servlet;
+package servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -16,11 +16,8 @@ import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import main.java.dao.RolesDao;
-import main.java.dao.UsuariosDao;
-import main.java.entities.Roles;
-import main.java.entities.Usuarios;
-import main.java.utils.HibernateUtil;
+import dao.UsuariosDao;
+import utils.HibernateUtil;
 
 /**
  * Servlet implementation class AltaUsuario

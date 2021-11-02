@@ -1,4 +1,4 @@
-package main.java.servlet;
+package servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -21,9 +21,8 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
-import main.java.dao.UsuariosDao;
-import main.java.entities.Usuarios;
-import main.java.utils.HibernateUtil;
+import dao.UsuariosDao;
+import entities.Usuarios;
 
 /**
  * Servlet implementation class Login
@@ -53,7 +52,7 @@ public class Login extends HttpServlet {
 		usuario = request.getParameter("usuario");
 		password = request.getParameter("password");
 		
-		Usuarios u = UsuariosDao.devolverUsuarioEmail(s, usuario);
+		/*Usuarios u = UsuariosDao.devolverUsuarioEmail(s, usuario);
 		
 		if(u != null) {
 			if(password.equals(u.getClave())){
@@ -67,7 +66,7 @@ public class Login extends HttpServlet {
 		}else {
 			logger.warn("El usuario no existe");
 			out.println("<h1>No se ha iniciado sesion el usuario no existe</h1>");
-		}
+		}*/
 	}
 
 	/**
